@@ -1,7 +1,8 @@
 # ex_laravel
-excercise with laravel and ?
+excercise with laravel, docker and ? (reddis? mysql?)
 
 
-
-$ docker-compose build --no-ache
+```bash
+$ docker-compose build --no-cache
 $ docker-compose up
+```
