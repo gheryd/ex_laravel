@@ -14,3 +14,5 @@ WORKDIR /var/www/host_php
 RUN composer global require "laravel/installer=~1.1"
 
 ENV PATH="~/.composer/vendor/bin:${PATH}"
+
+RUN a2enmod rewrite
