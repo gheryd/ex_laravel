@@ -7,12 +7,10 @@ services:
             # web page http://localhost:3001
             - 3001:80
         volumes:
-            - ./host_php/src:/var/www/host_php/src
+            - ./host_php/src/ex_laravel:/var/www/host_php
             - ./host_php/docker/php.ini:/usr/local/etc/php/conf.d/custom.ini
             - ./host_php/docker/apache_host_php.conf:/etc/apache2/sites-enabled/host_php.conf
         #depends_on:
         #    - host_mysql
         environment:
             - HOST=host_php
-        volumes:
-            - ./host_php/src:/var/www/host_php/src
